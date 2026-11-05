@@ -1,0 +1,143 @@
+
+.admin-page {
+  min-height: 100vh;
+  background: #f5f7f2;
+  padding-bottom: 50px;
+}
+
+.admin-header {
+  background: #244b36;
+  color: white;
+  padding: 45px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.admin-header span {
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #d5e5d7;
+}
+
+.admin-header h1 {
+  font-size: 38px;
+  font-weight: 700;
+  margin: 12px 0;
+}
+
+.admin-header p {
+  margin: 0;
+  color: #e0e9e1;
+}
+
+.admin-home-btn {
+  color: #244b36;
+  background: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.admin-container {
+  padding-top: 35px;
+}
+
+.admin-stats {
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #477653;
+}
+
+.stat-card span {
+  color: #66736a;
+  font-size: 15px;
+}
+
+.stat-card h2 {
+  color: #244b36;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 12px 0 0;
+}
+
+.admin-bookings {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+}
+
+.admin-table-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.admin-table-heading h2 {
+  color: #244b36;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.admin-table-heading span {
+  color: #477653;
+  background: #edf4ed;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.admin-table th {
+  background: #edf4ed;
+  color: #244b36;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.admin-table td {
+  color: #465149;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.admin-message {
+  padding: 25px 0;
+  color: #66736a;
+}
+
+.admin-error {
+  padding: 20px 0;
+  color: #c0392b;
+}
+
+@media (max-width: 768px) {
+  .admin-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 35px 6%;
+  }
+
+  .admin-header h1 {
+    font-size: 30px;
+  }
+
+  .admin-bookings {
+    padding: 15px;
+  }
+
+  .admin-table-heading h2 {
+    font-size: 19px;
+  }
+}

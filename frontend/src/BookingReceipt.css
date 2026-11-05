@@ -1,0 +1,136 @@
+.receipt-page {
+  min-height: 100vh;
+  background: #f1f6ef;
+  padding: 50px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.receipt-card {
+  width: 100%;
+  max-width: 650px;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+}
+
+.receipt-success {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #e3f3e5;
+  color: #287542;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+}
+
+.receipt-card h1 {
+  text-align: center;
+  color: #244b35;
+  font-weight: 700;
+}
+
+.receipt-subtitle {
+  text-align: center;
+  color: #68756b;
+  margin-bottom: 30px;
+}
+
+.receipt-brand {
+  text-align: center;
+  color: #244b35;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.receipt-divider {
+  border-top: 1px dashed #cbd5ca;
+  margin: 20px 0;
+}
+
+.receipt-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 12px 0;
+  border-bottom: 1px solid #edf0ed;
+}
+
+.receipt-row span {
+  color: #68756b;
+}
+
+.receipt-row strong {
+  color: #26352b;
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+
+.receipt-total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 18px;
+  background: #f1f6ef;
+  border-radius: 8px;
+  color: #244b35;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.receipt-note {
+  color: #68756b;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+.receipt-print {
+  width: 100%;
+  padding: 13px;
+  margin-top: 15px;
+  background: #244b35;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-weight: 600;
+}
+
+.receipt-home {
+  display: block;
+  text-align: center;
+  margin-top: 18px;
+  color: #244b35;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media print {
+  .receipt-page {
+    background: white;
+    padding: 0;
+  }
+
+  .receipt-card {
+    box-shadow: none;
+  }
+
+  .receipt-print,
+  .receipt-home {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .receipt-card {
+    padding: 22px;
+  }
+
+  .receipt-row {
+    font-size: 13px;
+  }
+}
